@@ -61,9 +61,10 @@ if page == "🔮 ทำนาย Profit":
         quantity = st.slider("Quantity — จำนวนสินค้า", min_value=1, max_value=14, value=3,
                              help="จำนวนสินค้าใน order")
         
-        discount = st.slider("Discount — ส่วนลด", min_value=0.0, max_value=0.8, value=0.0, step=0.05,
-                             help="0.0 = ไม่ลด, 0.2 = ลด 20%, 0.8 = ลด 80%",
-                             format="%.0f%%") * 100
+        discount_pct = st.slider("Discount — ส่วนลด", min_value=0, max_value=80, value=0, step=5,
+                             help="0 = ไม่ลด, 20 = ลด 20%, 80 = ลด 80%",
+                             format="%d%%")
+        discount = discount_pct / 100
 
     with col2:
         st.subheader("🚚 ข้อมูลการจัดส่ง & ลูกค้า")
