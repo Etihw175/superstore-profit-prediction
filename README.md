@@ -51,8 +51,7 @@ App มี 3 หน้า:
 ├── data/
 │   └── Sample_-_Superstore.csv   # Dataset
 ├── notebooks/
-│   ├── 01_EDA.ipynb               # Exploratory Data Analysis
-│   └── 02_Model_Training.ipynb    # Model training & evaluation
+│   └── EDA.ipynb               # Exploratory Data Analysis
 └── README.md
 ```
 
@@ -60,7 +59,7 @@ App มี 3 หน้า:
 
 ```bash
 # Clone repo
-git clone https://github.com/YOUR_USERNAME/superstore-profit-prediction.git
+git clone https://github.com/Etihw175/superstore-profit-prediction.git
 cd superstore-profit-prediction
 
 # Install dependencies
