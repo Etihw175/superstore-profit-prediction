@@ -63,7 +63,7 @@ if page == "🔮 ทำนาย Profit":
         
         discount = st.slider("Discount — ส่วนลด", min_value=0.0, max_value=0.8, value=0.0, step=0.05,
                              help="0.0 = ไม่ลด, 0.2 = ลด 20%, 0.8 = ลด 80%",
-                             format="%.0f%%")
+                             format="%.0f%%") * 100
 
     with col2:
         st.subheader("🚚 ข้อมูลการจัดส่ง & ลูกค้า")
