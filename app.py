@@ -21,7 +21,7 @@ model = load_model()
 # ==================== Load Data (for EDA tab) ====================
 @st.cache_data
 def load_data():
-    return pd.read_csv('Sample_-_Superstore.csv', encoding='latin-1')
+    return pd.read_csv('Sample - Superstore.csv', encoding='latin-1')
 
 df = load_data()
 
